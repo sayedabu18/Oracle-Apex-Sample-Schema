@@ -1,0 +1,8 @@
+UNINSTALL INSTRUCTIONS
+  1. Run as privileged user with rights to create another user
+     (SYSTEM, ADMIN, etc.)
+  2. Run the hr_uninstall.sql script to remove the HR (human resources) schema
+
+NOTES
+  Scripts need to be run as a privileged user with rights to create
+  another user (SYSTEM, ADMIN, etc.)
