@@ -1,0 +1,26 @@
+First Download the HR Schema Zip File from my github repository
+
+https://github.com/sayedabu18/Oracle-Apex-Sample-Schema
+
+After Download. Extract Downloaded zip file then go to inside of extracted folder path and execute following cmd:
+
+sqlplus /nolog
+
+SQL> conn sys as sysdba
+
+connected
+
+SQL> alter session set container=xepdb1 (Note: in my case i used oracle database 23xe that's why i used "xepdb1" But in your case pluggable database name 
+might change depending on using enterprise or xe edition) 
+
+SQL> @hr_install.sql
+
+assign tablespace when prompt: Normally you can select USERS or if you define any other tablespace to assign hr schema to that tablespace
+assign hr password when prompt as your requirements.
+
+After few minuit the sample hr schema will added to your 21c xe database.
+
+Congratualations.
+
+Enjoy !!
+
