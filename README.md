@@ -45,25 +45,3 @@ MAJOR CHANGES IN THIS RELEASE
 
 SCHEMA DEPENDENCIES AND REQUIREMENTS
  Required access to hr_install.sql, hr_create.sql, hr_populate.sql, hr_code.sql
-
-INSTALL INSTRUCTIONS
-  1. Run as privileged user with rights to create another user
-     (SYSTEM, ADMIN, etc.)
-  2. Run the hr_install.sql script to create the HR (human resources) schema
-  3. You are prompted for:
-     a. password - enter an Oracle Database compliant password
-     b. tablespace - if you do not enter a tablespace, the default
-        database tablespace is used
-  Note: If the HR schema already exists, it is removed/dropped and
-        a fresh HR schema is installed
-
-UNINSTALL INSTRUCTIONS
-  1. Run as privileged user with rights to create another user
-     (SYSTEM, ADMIN, etc.)
-  2. Run the hr_uninstall.sql script to remove the HR (human resources) schema
-
-NOTES
-  Scripts need to be run as a privileged user with rights to create
-  another user (SYSTEM, ADMIN, etc.)
-
---------------------------------------------------------------------------
